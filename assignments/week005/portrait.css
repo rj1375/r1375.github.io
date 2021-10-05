@@ -1,0 +1,111 @@
+
+
+h1 { font-family: Futura; font-size: 28px; font-style: italic; font-variant: normal; font-weight: 700; line-height: 23px; color: pink;} 
+h2 { font-family: 'Inconsolata', monospace; font-size: 16px; font-weight: 100; font-style: normal; line-height: 23PX; color: #000000;} 
+h3 { font-family: 'Inconsolata', monospace; font-size: 14px; font-weight: 100; font-style: normal; line-height: 23PX; color: #000000;} 
+p { font-family: Futura, 'Arial Light', Arial, sans-serif; font-size: 12px; font-style: normal; font-variant:normal; font-weight: 525; line-height: 16px; color:#000000;} 
+a { font-family: 'Inconsolata', monospace; font-size: 14px; font-weight: 300; text-decoration: none; font-style: normal; color: khaki;} 
+
+body {
+ background: #FFECB3;
+
+}
+  .face {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background: #FCBEDA;
+    box-shadow: inset -10px -10px 0 0 #FA95A8;
+  }
+  
+  .eye {
+    position: absolute;
+    height: 60px;
+    width: 30px;
+    background: #0D163B;
+    border-radius: 50%;
+    top: 60px;
+  }
+  
+  .left {
+    left: 60px;
+  }
+  
+  .right {
+    right: 60px;
+  }
+
+
+.eye::after {
+  content: "";
+  height: 25px;
+  width: 15px;
+  border-radius: 50%;
+  background: #182884;
+  position: absolute;
+  left: 4px;
+  bottom: 8px;
+}
+
+.eye::before {
+  content: "";
+  position: block;
+  height: 20px;
+  width: 15px;
+  border-radius: 50%;
+  background: #f3f2e4;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+
+.mouth {
+    width: 120px;
+    height: 60px;
+    border-radius: 5px 5px 60px 60px;
+    background: #671E21;
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);  
+    overflow: hidden;
+    border: 5px solid #7C2222;
+    box-sizing: border-box;
+}
+
+  .mouth::after {
+    content: "";
+    width: 100px;
+    height: 50px;
+    background: #F76A64;
+    border-radius: 50px 50px 0 0;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+.cheek-left {
+    height: 10px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: 25px;
+    top: 120px;
+    background: #F987BD;
+    opacity: 0.5;
+ }
+
+.cheek-right {
+  height: 10px;
+  width: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 120px;
+  right: 25px;
+  background: #F987BD;
+  opacity: 0.5;
+}
+
+
