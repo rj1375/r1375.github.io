@@ -1,0 +1,205 @@
+/* CSS ================================================================================================================== */
+
+/* Fonts */
+@font-face { font-family: 'Icons'; font-style: normal; font-weight: normal; src: url('../fonts/fa-brands-400.woff2') format('woff2'), url('../fonts/fa-brands-400.woff') format('woff'); }
+
+/* Settings */
+    html,body,h1,h2,h3,h4,ul,li,textarea,button,a {margin:0;padding:0;border:0;font:inherit;color:inherit;text-decoration:none}
+    ul {list-style:none}
+    html {box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+    main {display:block}
+    img,svg,embed,audio {display:block;height:auto;max-width:100%}
+
+/* Basics ========================================================================================================== */
+
+/* Yellow Loading Bar */
+.progressbar {
+	position: fixed; top: 0; left: 0; z-index: 1;
+	height: 0.35rem; width: 0;
+	background: #ffe132;
+	transition: width 0.1s linear;
+}
+
+body {
+    font-size: 15px;
+    background-color: white;
+    color: black; line-height: 1.3; 
+    font-family: 'akzidenz-grotesk',sans-serif; letter-spacing: 0.05em;
+}
+
+main {
+    position: relative;
+    padding: 8rem 1.5rem;
+}
+
+/* ==== Typography ================================================================================================================== */
+
+    /* Text */
+    h1 {
+        font-weight: 500;
+    }
+    h2 {
+        margin-bottom: 0.25em;
+        font-size: 2em;
+    }
+    * + p,
+    * + ul {
+        margin-top: 0.6em;
+    }
+
+    /* Lists */
+    .nav-container {
+        border: 8px outset  #ffe132; 
+        outline: 8px outset #E4F6F8; 
+        border-radius: 12px; text-align: center; 
+        margin: 32px; padding: 10px 20px 10px 20px; 
+        outline-offset: 0.5rem;
+        position: absolute;
+    }
+    
+    /* Links */
+    main a {
+        box-shadow: 0 -0.25em 0 #ffe132 inset;
+        transition: none;
+    }
+    footer a {
+    box-shadow: 0 0 0 #ffe132 inset;
+    }
+
+    main a:hover,
+    footer a:hover {
+        box-shadow: 0 -1.2em 0 #ffe132 inset;
+        transition: box-shadow 0.1s linear, color 0.25s linear;
+    }
+
+
+/* Title ============================================================================================================ */
+
+.title {
+	position: fixed; top: 0; left: 0; z-index: 20002;
+	padding: 1.25rem 1.5rem;
+	color: black; font-weight: 600; font-size: 1.286rem; line-height: 1.5rem;
+	transition: color 0.25s;
+}
+
+.logo a {
+	display: block;
+}
+.logo .subsection {
+	font-style: italic;
+}
+
+/* Nav Meta ================================================================================================================== */
+
+.nav--meta {
+	position: fixed; top: 0; right: 0; z-index: 20001;
+	padding: 1.25rem 1.5rem;
+    color: black; font-weight: 600; font-size: 1.286rem; line-height: 1.5rem;
+	transition: color 0.25s;
+}
+.nav--meta li {
+	position: relative;
+	float: left;
+}
+.nav--meta li + li::after {
+	display: block; content: 'menu';
+	position: absolute; top: 1rem; left: 0;
+	width: 2px; height: 1rem;
+	background-color: #ffe132;
+}
+.nav--meta a {
+	display: block;
+	padding: 1rem 0.5rem 1rem 0.65rem;
+	color: black; font-weight: 500; line-height: 1rem;
+}
+
+/* Nav ================================================================================================================== */
+
+.nav {
+	position: fixed; top: 0; right: 0; z-index: 20000;
+	padding: 1.25rem 1.5rem;
+	color: black; font-weight: 600; font-size: 1.286rem; line-height: 2rem;
+	transition: color 0.25s;
+    display: block;
+}
+
+.nav a {
+	color: black;
+}
+.nav a:hover {
+	color: #ffe132;
+    font-size: 110%;
+}
+.nav--secondary a:hover{
+	color: grey;
+}
+
+
+.nav-container {
+    position: absolute; top: 0; right: 0;
+}
+
+.nav li {
+    line-height: 2;
+}
+.nav--primary {
+	font-size: 18px;
+}
+.nav--secondary {
+	font-size: 14px;
+}
+
+
+
+/* Inverted navigation */
+
+.nav-inverted .logo {
+	color: white;
+}
+.nav-inverted .nav--meta a {
+	color: white;
+}
+.nav-inverted .nav--meta li + li::after {
+	background-color: white;
+}
+
+.nav-toggle-on, 
+.nav-toggle-off {
+	display: block; 
+    overflow: hidden;
+	cursor: pointer;
+}
+.nav-toggle-off {
+    height: 0;
+}
+
+/* Footer */
+
+footer {
+	overflow: hidden;
+	padding: 1.5rem;
+	font-weight: 500; font-size: 0.67rem;
+    position: fixed; bottom: 0; 
+    transform: translate(0, 0);
+    box-shadow: #ffe132;
+}
+
+/* Works/Projects/Lab Pages ================================================================================================================== */
+
+.content {
+	max-width: 90rem; margin: 0 auto;
+}
+
+.content-text-more {
+	margin-top: 5%;
+}
+
+.content-container {
+	overflow: hidden;
+}
+
+.content-image + .content-text,
+.content-text + .content-image,
+.content-text-col + .content-text-col {
+	margin-top: 1.5em;
+}
