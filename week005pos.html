@@ -1,0 +1,215 @@
+<DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <!-- Meta Data -->
+    <meta name="description" content="Reflections">
+    <meta name="keywords" content="Reading, Writing, Watching, Listening, and Feeling.">
+    <meta name="author" content="Rachel Berlow Josepho">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Outputs of inputs">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/cd2eda608c.js" crossorigin="anonymous"></script>
+    <title>Rachel Made This</title>
+    <style>
+      h1 {
+        font-family: Futura;
+        font-size: 28px;
+        font-style: italic;
+        font-variant: normal;
+        font-weight: 700;
+        line-height: 23px;
+        color: pink;
+      }
+
+      h2 {
+        font-family: 'Inconsolata', monospace;
+        font-size: 18px;
+        font-weight: 100;
+        font-style: normal;
+        line-height: 23PX;
+        color: #000000;
+      }
+
+      h3 {
+        font-family: 'Inconsolata', monospace;
+        font-size: 14px;
+        font-weight: 100;
+        font-style: normal;
+        line-height: 23PX;
+        color: #000000;
+      }
+
+      p {
+        font-family: Futura, 'Arial Light', Arial, sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 525;
+        line-height: 16px;
+        color: #000000;
+      }
+
+      a {
+        font-family: 'Inconsolata', monospace;
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        font-style: normal;
+        color: #62C2CC;
+      }
+    </style>
+  </head>
+
+  <body style="background-color: Beige;">
+    <br><br>
+
+    <!-- INTRODUCTION -->
+    <div class="container justify-content-center col-lg-6">
+      <h1>☆・ 。Rachel's week 5 。・☆</h1>
+      <h2>These are my project assignments for Web Development week 5</h2>
+      <p class="card-text"><small class="text-muted">DM-UY 2193 Fall 2021</small></p>
+      <!--<a href="site.html/#projects"> View Work ↓</a>-->
+    </div>
+    <br><br>
+
+    <!-- PROJECTS -->
+    <section class="space bg" id="projects">
+      <div class="container col-lg-8">
+
+
+
+        <!-- Assignments -->
+        <div class="row proj-card">
+          <div class="col-md-4">
+            <i class="far fa-smile-beam"></i>
+            <h2 class="card-title">Portrait</h2>
+          </div>
+          <div class="col-md-8">
+            <a href="portrait/portrait.html">Link to PORTRAIT</a>
+          </div>
+        </div>
+
+        <br><br><br>
+
+        <div class="row proj-card">
+          <div class="col-md-4">
+            <i class="fas fa-crosshairs"></i>
+            <h2 class="card-title">Positioning</h2>
+            <h3 class="card-subtitle"><a
+                href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning" target="_blank"
+                rel="noreferrer noopener">MDN CSS Tutorial</a></h3>
+          </div>
+          <div class="col-md-8">
+            <a href="positioning/pos.html">Link to POSITIONING TUTORIAL PAGE</a>
+            <br>
+          </div>
+        </div>
+
+        <br><br><br>
+
+
+        <div class="row proj-card">
+          <div class="col-md-4">
+            <i class="fas fa-book-reader"></i>
+            <h2 class="card-title">Reading</h2>
+            <h3 class="card-subtitle"><a href="http://oldobjectsnewideas.com/_reading/greene_netart.pdf">Rachel
+                Greene</a></h3>
+            <br>
+            <h3 class="card-subtitle"><a
+                href="https://www.nytimes.com/2020/05/06/arts/net-artists-galleries-coronavirus.html">With Galleries
+                Closed, a Moment for Net Artists to Shine</a></h3>
+          </div>
+          <div class="col-md-8">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <hr>
+      <p class="space">Wanna chat? <br> Say 👋 via:</p>
+      <a class="enlarge" target="_blank" href="mailto:rj1375@nyu.edu">
+        <i class="fas fa-envelope"></i></a>
+      <br><br>
+      <p class="caption">Built with ♡ + ☕️ by Rachel Berlow Josepho</p>
+    </footer>
+    <!-- End of Footer -->
+
+    </script>
+
+  </body>
+
+  </html>
+
+
+
+
+  <style>
+    body {
+      width: 500px;
+      height: 1400px;
+      margin: 0 auto;
+      background: beige;
+    }
+
+    .positioned {
+      position: sticky;
+      top: 30px;
+      left: 30px;
+    }
+
+    p:nth-of-type(1) {
+      margin-top: 60px;
+    }
+
+    h1 {
+      position: fixed;
+      top: 0;
+      width: 500px;
+      margin-top: 0;
+      background: white;
+      padding: 10px;
+    }
+
+    p {
+      background: aqua;
+      border: 3px solid blue;
+      padding: 10px;
+      margin: 10px;
+    }
+
+
+    span {
+      background: red;
+      border: 1px solid black;
+    }
+  </style>
+
+  </head>
+
+  <body>
+    <h1>Basic document flow</h1>
+
+    <p class="positioned">I am a basic block level element. My adjacent block level elements sit on new lines below me.
+    </p>
+
+    <p>By default we span 100% of the width of our parent element, and our height is as tall as our child content. Our
+      total width and height is our content + padding + border width/height.</p>
+
+    <p>We are separated by our margins. Because of margin collapsing, we are separated by the width of one of our
+      margins, not both.</p>
+
+    <p>inline elements <span>like this one</span> and <span>this one</span> sit on the same line as one another, and
+      adjacent text nodes, if there is space on the same line. Overflowing inline elements <span>wrap onto a new line if
+        possible — like this one containing text</span>, or just go on to a new line if not, much like this image will
+      do: <img src="long.jpg"></p>
+
+  </body>
+
+  </html>
