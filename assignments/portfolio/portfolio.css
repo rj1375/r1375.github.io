@@ -54,7 +54,6 @@ main {
         border-radius: 12px; text-align: center; 
         margin: 32px; padding: 10px 20px 10px 20px; 
         outline-offset: 0.5rem;
-        position: absolute;
     }
     
     /* Links */
