@@ -206,15 +206,13 @@ h2 {
     background-color: transparent;
     line-height: 20px;
     line-break: auto;
+    border-radius: 10px;
   }
   
   .gridoptions button:hover {
     background-color: #ffe132;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
     box-shadow: #ffe132;
-    border-radius: 25px;
-    font-size: 24px;
+    padding: 3px ;
   }
 
   .gridoptions button.active {
