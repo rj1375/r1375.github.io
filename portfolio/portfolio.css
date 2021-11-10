@@ -78,8 +78,9 @@ h2 {
 
 .title {
 	position: fixed; top: 0; left: 0; z-index: 20002;
-	padding: 1.25rem 1.5rem;
-	color: black; font-weight: 600; font-size: 1.286rem; line-height: 1.5rem;
+	padding: 1rem 1rem 1rem 1rem;
+	color: black; font-weight: 600; font-size: 1.286rem; 
+    line-height: inherit;
 	transition: color 0.25s;
     background-color: white;
     border-radius: 25px;
@@ -183,7 +184,7 @@ h2 {
 
   .gridoptions {
     text-align: center;
-    top: 30px;
+    top: 0;
     padding: 32px;
     display: block;
     font-family: 'akzidenz-grotesk',sans-serif; letter-spacing: 0.05em;
