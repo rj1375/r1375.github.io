@@ -24,13 +24,15 @@ main {
     padding: 8rem 1.5rem;
 }
 
-/*  Bar */
+/* Progress bar */
+
 .progressbar {
 	position: fixed; top: 0; left: 0; z-index: 1;
-	height: 10px; width: 0;
+	height: 0.35rem; width: 0;
 	background: #ffe132;
 	transition: width 0.1s linear;
 }
+
 
 /* ==== Typography ================================================================================================================== */
 
@@ -79,6 +81,9 @@ h2 {
 	padding: 1.25rem 1.5rem;
 	color: black; font-weight: 600; font-size: 1.286rem; line-height: 1.5rem;
 	transition: color 0.25s;
+    background-color: white;
+    border-radius: 25px;
+    
 }
     .logo a {
         display: block;
@@ -89,7 +94,7 @@ h2 {
 
         
 
-/* Menu ================================================================================================================== */
+/* PORTFOLIO MENU PAGES ================================================================================================================== */
 
 .menu {
     height: 100%; 
@@ -104,7 +109,6 @@ h2 {
     transition: 0.5s; 
   }
   
-/* Menu links */
 .menu a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -153,20 +157,99 @@ h2 {
 .btn_open:hover {
     color: #ffe132
 }
+
+/* GRID OPTIONS ==================================================================================================================*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 50%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
+  .gridoptions {
+    text-align: center;
+    top: 30px;
+    padding: 32px;
+    display: block;
+    font-family: 'akzidenz-grotesk',sans-serif; letter-spacing: 0.05em;
+    color: black; 
+    line-height: 1.3; 
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .gridoptions h1{
+    font-family: 'akzidenz-grotesk',sans-serif; letter-spacing: 0.05em;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .gridoptions button{
+    font-family: 'akzidenz-grotesk',sans-serif; letter-spacing: 0.05em;
+    font-size: 20px;
+    background-color: transparent;
+    line-height: 20px;
+    line-break: auto;
+  }
+  
+  .gridoptions button:hover {
+    background-color: #ffe132;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    box-shadow: #ffe132;
+    border-radius: 25px;
+    font-size: 24px;
+  }
+
+  .gridoptions button.active {
+    background-color: black;
+    color: white;    
+    border-radius: 25px;
+  }
         
 
-  /* Main page content shift when menu opens */
-#main {
-    transition: margin-right .5s; 
-    padding: 20px;
+/* Footer ==================================================================================================================*/
+
+footer {
+	overflow: hidden;
+	padding: 1.5rem;
+	font-weight: 500; font-size: 0.67rem;
+    position: fixed; bottom: 0; 
+    transform: translate(0, 0);
+    box-shadow: #ffe132;
+    background-color: white;
+    border-radius: 25px;
 }
 
-@media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-}
-   
+/* Works/Projects/Lab Pages ================================================================================================================== */
 
+.content {
+	max-width: 90rem; margin: 0 auto;
+}
+
+.content-text-more {
+	margin-top: 5%;
+}
+
+.content-container {
+	overflow: hidden;
+}
+
+.content-image + .content-text,
+.content-text + .content-image,
+.content-text-col + .content-text-col {
+	margin-top: 1.5em;
+}
 
 /* 
 .menu {
@@ -358,35 +441,4 @@ h2 {
 }
 .nav-toggle-off {
     height: 0;
-}
-
-/* Footer ==================================================================================================================*/
-
-footer {
-	overflow: hidden;
-	padding: 1.5rem;
-	font-weight: 500; font-size: 0.67rem;
-    position: fixed; bottom: 0; 
-    transform: translate(0, 0);
-    box-shadow: #ffe132;
-}
-
-/* Works/Projects/Lab Pages ================================================================================================================== */
-
-.content {
-	max-width: 90rem; margin: 0 auto;
-}
-
-.content-text-more {
-	margin-top: 5%;
-}
-
-.content-container {
-	overflow: hidden;
-}
-
-.content-image + .content-text,
-.content-text + .content-image,
-.content-text-col + .content-text-col {
-	margin-top: 1.5em;
 }
