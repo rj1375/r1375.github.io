@@ -85,6 +85,10 @@ h2 {
     border-radius: 25px;
     
 }
+
+.title:hover{
+    color: #ffe132;
+}
     .logo a {
         display: block;
     }
