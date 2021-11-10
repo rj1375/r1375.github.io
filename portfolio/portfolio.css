@@ -86,11 +86,12 @@ h2 {
     
 }
 
-.title:hover{
-    color: #ffe132;
-}
     .logo a {
         display: block;
+    }
+
+    .logo a:hover{
+        color: #ffe132;
     }
         .logo .subsection {
             font-style: italic;
