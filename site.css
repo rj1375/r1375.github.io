@@ -1,13 +1,74 @@
-h1 {
+.main {
     font-family: Futura;
     font-size: 28px;
     font-style: italic;
     font-variant: normal;
     font-weight: 700;
     line-height: 23px;
-    color: pink;
+  
+  overflow: hidden;
+  display: block;
+	padding: 1.5rem;
+  position: fixed; top: 10; right: 50; 
+  transform: translate(0, 0);
+  background-color: rgb(255, 244, 244);
+  border-radius: 25px;
+}
+
+li {
+  font-family: 'Inconsolata', monospace;
+  font-size: 12px;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 23PX;
+  color: #000000;
+  line-height: 40px;
+}
+
+li a {
+  font-size: 20px;
+}
+
+.main a {
+  font-size: 30px;
+  font-weight: bold;
+  color: pink;
+}
+
+.main a:hover{
+  font-size: 34px;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.subscript {
+
+ }
+
+
+  /* Card */
+  .card {
+    background-color: whitesmoke;
+    border-radius: 15px;
+    scroll-behavior: smooth;
+    margin: 50 50 50 50;
+    padding-top: 20;
+    padding-left: 20;
+    padding-bottom: 20;
+    padding-right: 20;
+    margin-right: 400;
   }
 
+  .card a:hover{
+    font-family: 'Inconsolata', monospace;
+    font-size: 16px;
+    text-decoration: none;
+    font-style: normal;
+    color: #62C2CC;
+    font-weight: bold;
+  }
+
+  /* Card Title */
   h2 {
     font-family: 'Inconsolata', monospace;
     font-size: 18px;
@@ -17,6 +78,7 @@ h1 {
     color: #000000;
   }
 
+/* Card Content */
   h3 {
     font-family: 'Inconsolata', monospace;
     font-size: 14px;
@@ -52,9 +114,9 @@ footer {
 	overflow: hidden;
 	padding: 1.5rem;
 	font-weight: 500; font-size: 0.67rem;
-    position: fixed; bottom: 0; 
+    position: fixed; bottom: 0; right: 50; 
     transform: translate(0, 0);
-    box-shadow: #ffe132;
     display: block;
-
+  background-color: white;
+  border-radius: 25px;
 }
