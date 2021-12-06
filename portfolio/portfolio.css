@@ -203,14 +203,15 @@ p {
         flex: 50%;
     }
   
-    .column .bio img {
+   .row .column .bio img {
         margin-top: 8px;
-        margin-left: 200px;
         vertical-align: right;
         align-items: right;
         width: 200px;
         height: auto;
+        margin-left: 200px;
     } 
+
 
   .column .bio {
       vertical-align: right;
