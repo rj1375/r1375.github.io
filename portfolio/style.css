@@ -133,8 +133,11 @@ body{
 }
 
 .nav-items{
+    margin-left: 20px;
     height: 22px;
     position: relative;
+    display: block;
+    flex-wrap: nowrap;
 }
 
 .icon{
