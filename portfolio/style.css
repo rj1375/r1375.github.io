@@ -500,10 +500,19 @@ body{
     .right-col {
         display: none;
     }
-    /* .nav-wrapper,
-    .wrapper{
+    .nav-wrapper {
         width: 90%;
-    } */
+    }
+    /* .search-box{
+        width: 30%;
+        justify-content: center;
+    }*/
+    .nav-items{
+        display: flex; 
+        overflow-x: hidden;
+        flex-wrap: nowrap;
+        right: 0px;
+    } 
     .wrapper{
         display: block;
     }
