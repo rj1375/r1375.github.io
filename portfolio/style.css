@@ -496,14 +496,14 @@ body{
 }
 
 
- @media (max-width: 1500px) {
+ @media (max-width: 2000px) {
     .right-col {
         display: none;
     }
-    .nav-wrapper,
+    /* .nav-wrapper,
     .wrapper{
         width: 90%;
-    }
+    } */
     .wrapper{
         display: block;
     }
