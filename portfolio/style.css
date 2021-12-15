@@ -505,6 +505,14 @@ body{
         width: 90%;
         flex-wrap: nowrap;
     }
+    .brand-img {
+        max-width: 30%;
+    }
+    .nav-items {
+        display: flex;
+        max-width: 30%;
+        flex-wrap: nowrap;
+    }
     .wrapper{
         display: block;
     }
