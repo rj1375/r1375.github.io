@@ -356,10 +356,10 @@ body{
 }
 
 .mood-wrapper .mood {
-    width: 60px;
+    width: 65px;
     height: 30px;
     font-size: 10px;
-    font-weight: 500;
+    font-weight: bolder;
     font-family: 'roboto', sans-serif;
     border-radius: 6px;
     border: transparent;
