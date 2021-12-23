@@ -1,0 +1,83 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <title>rachel berlow josepho</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="rachel berlow josepho">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="portfolio.css">
+        <script src="https://kit.fontawesome.com/cd2eda608c.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="title">
+                <div class="logo">
+                    <a href="home.html">Rachel's</a> about me
+                </div>
+            </div>
+
+            <!-- PORTFOLIO PAGES MENU: top right -->
+            <div id="main">
+                <button class="btn_open" onclick="openMenu()" style="color: black; right:0;">☰</button>
+            </div>
+
+            <!-- PORTFOLIO PAGES MENU: JS -->
+            <div id="menu" class="menu">
+                <a href="javascript:void(0)" class="btn_close" onclick="closeMenu()">×</a>
+                <div class="primary" id="primary">
+                    <a href="works.html">digital works</a>
+                    <a href="social.html">"mixed feelings"</a>
+                    <a href="experience.html">experience</a>
+                    <a href="about.html">about me</a>
+                    <a href="contact.html">contact</a>
+                </div>
+            </div>
+
+            <!-- MAIN BODY -->
+            <div class="row" style="margin-top: 150px;">
+                <!-- profile photo -->
+                <div class="column">
+                    <div class="bio">
+                        <img src="media/portrait.jpeg" style="width: 60%;">
+                    </div>
+                </div>
+                <!-- bio section -->
+                <div class="column">
+                    <div class="bio" style="margin-right: 50px;">
+                        <h3>Human-Centered Designer | <br>Creative Technologist</h3><br>
+                        <p>NYU student, user experience designer, and award-winning piano player.
+                            Likes to make people smile.</p><br>
+                        <p>Enjoys googling everything, frequently listens to music and podcasts,
+                            and is interested in blockchain technology.</p><br>
+                        <p>Driven to develop products to enable creativity, promote equality, and foster
+                            quality experiences.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Footer -->
+            <footer> Built with ☕️ & ♡ by Rachel Berlow Josepho</footer>
+
+
+            <script>
+                // PORTFOLIO PAGES JAVASCRIPT
+                function openMenu() {
+                    document.getElementById("menu").style.width = "250px";
+                    document.getElementById("main").style.marginRight = "250px";
+                }
+                function closeMenu() {
+                    document.getElementById("menu").style.width = "0";
+                    document.getElementById("main").style.marginRight = "0";
+                }
+            </script>
+
+            <!-- Footer -->
+            <footer class="front-page">
+                Built with ☕️ & ♡ by Rachel Berlow Josepho
+            </footer>
+
+    </body>

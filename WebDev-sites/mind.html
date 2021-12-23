@@ -1,0 +1,119 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <title>rachel berlow josepho</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="rachel berlow josepho">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="portfolio.css">
+        <script src="https://kit.fontawesome.com/cd2eda608c.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="title">
+                <div class="logo">
+                    <a href="home.html">Rachel's</a> thought patterns
+                </div>
+            </div>
+        </header>
+
+        <!-- PORTFOLIO PAGES MENU -->
+        <div id="menu" class="menu">
+            <a href="javascript:void(0)" class="btn_close" onclick="closeMenu()">×</a>
+            <div id="primary" class="primary">
+                <a href="works.html">digital works</a>
+                <a href="social.html">"mixed feelings"</a>
+                <a href="experience.html">experience</a>
+                <a href="about.html">about me</a>
+                <a href="contact.html">contact</a>
+            </div>
+        </div>
+
+        <!-- MAIN BODY OF WEBSITE -->
+        <!-- GRID OPTIONS -->
+        <div class="gridoptions">
+            <h1>grid options</h1>
+            <button onclick="one()">1</button>
+            <button onclick="two()">2</button>
+            <button onclick="three()">3</button>
+        </div>
+
+        <div id="main">
+            <button class="btn_open" onclick="openMenu()">☰</button>
+        </div>
+
+
+        <!-- MEDIA -->
+        <div class="row">
+            <div class="column">
+                <!-- couch -->
+                <img src="media/portfolio.menu.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="media/portfolio.works.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <!-- elements -->
+                <img src="media/portfolio.aboutme.jpg" style="width:100%">
+            </div>
+        </div>
+
+
+
+        <!-- Footer -->
+        <footer> Built with ☕️ & ♡ </footer>
+
+        <script>
+            // PORTFOLIO PAGES JAVASCRIPT
+            function openMenu() {
+                document.getElementById("menu").style.width = "250px";
+                document.getElementById("main").style.marginRight = "250px";
+            }
+            function closeMenu() {
+                document.getElementById("menu").style.width = "0";
+                document.getElementById("main").style.marginRight = "0";
+            }
+
+
+            // GRID DISPLAY JAVASCRIPT
+            var elements = document.getElementsByClassName("column");
+            var i;
+            // 1
+            function one() {
+                for (i = 0; i < elements.length; i++) {
+                    elements[i].style.flex = "100%";
+                }
+            }
+            // 2
+            function two() {
+                for (i = 0; i < elements.length; i++) {
+                    elements[i].style.flex = "50%";
+                }
+            }
+            // 3
+            function three() {
+                for (i = 0; i < elements.length; i++) {
+                    elements[i].style.flex = "25%";
+                }
+            }
+
+            var top = document.getElementById("top");
+            var gridbtn = gridoptions.getElementsByClassName("gridbtn");
+            for (var i = 0; i < 3; i++) {
+                gridbtn[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                });
+            }
+        </script>
+
+        <!-- Footer -->
+        <footer class="front-page">
+            Built with ☕️ & ♡ by Rachel Berlow Josepho
+        </footer>
+
+    </body>
