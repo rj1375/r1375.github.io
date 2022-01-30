@@ -40,7 +40,18 @@ a {
     color: rgb(160, 160, 219);
 }
 
+/* when screens are a laptop... enable hover */
+@media (min-width: 992px) { 
 a:hover {
+    color: #dadadd;
+    text-decoration: none;
+    transition: all 0.4s;
+    text-decoration: underline;
+}
+}
+
+/* when screens dont have a mouse... enable active */
+a:active {
     color: #dadadd;
     text-decoration: none;
     transition: all 0.4s;
@@ -73,9 +84,12 @@ NAVBAR
     border: 1px solid #F6F9FC;
 }
 
+@media (min-width: 992px) { 
 #mainNav:hover {
     opacity: 1;
-    transition: all 0.2s ease-in-out;
+    transform: translateY(-0.25rem);
+    transition: all 0.4s;
+}
 }
 
 #mainNav a {
@@ -83,17 +97,13 @@ NAVBAR
     font-weight: 400;
 }
 
-#mainNav a:hover {
-    transform: translateY(-0.25rem);
-    transition: all 0.4s;
-}
 
 .bg {
     background-color: #f5f5f7;
     padding: 4rem 0rem;
 }
 
-
+@media (min-width: 992px) { 
 .cardHover:hover {
     transform: scale(1.05);
     transition: all 0.4s;
@@ -101,7 +111,7 @@ NAVBAR
     z-index: 2;
     position: relative;
 }
-
+}
 
 /*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  
 FOOTER
@@ -133,14 +143,22 @@ FOOTER
     color: rgb(160, 160, 219);
 }
 
-
-#links :hover{
+/* when screens are a laptop with a mouse... enable hover */
+@media (min-width: 992px) { 
+#links:hover{
     color: #dadadd;
     text-decoration: none;
     transition: all 0.4s;
     text-decoration: underline;
 }
-
+}
+/* when screens dont have a mouse... enable active */
+#links:active{
+    color: #dadadd;
+    text-decoration: none;
+    transition: all 0.4s;
+    text-decoration: underline;
+}
 
 /*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  
 SCROLL TO TOP 
@@ -162,6 +180,7 @@ SCROLL TO TOP
 ANIMATIONS
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
 
+@media (min-width: 992px) { 
 .enlarge:hover {
     transform: scale(1.2);
     transition: all 0.4s;
@@ -169,7 +188,7 @@ ANIMATIONS
     box-shadow: 1rem 1rem 2rem #dadadd;
     background-color: #FFF;
 }
-
+}
 
 /*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  
 SPACING
@@ -190,6 +209,35 @@ hr {
 
 
 /*  */
+
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+ }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+
+ }
+
 
 @media only screen and (min-width: 768px) {
     .content {
@@ -333,19 +381,35 @@ ART BOARDS
     margin-left: 50px;
     }
             
+/* When screens are at least 992 px or laptop... enable hover */
+@media (min-width: 992px) {
 .menu a:hover {
     color: #dadadd;
     text-decoration: none;
     transition: all 0.4s;
     }
-
 .primary a:hover{
     color: #dadadd;
     text-decoration: none;
     transition: all 0.4s;
     font-size: 20px;
     }
-            
+}   
+
+/* When screens are phones or ipads without mouses... enable active */
+    .menu a:active {
+        color: #dadadd;
+        text-decoration: none;
+        transition: all 0.4s;
+        }
+    .primary a:active{
+        color: #dadadd;
+        text-decoration: none;
+        transition: all 0.4s;
+        font-size: 20px;
+        }
+
+
 .btn_open {
     font-size: 20px;
     cursor: pointer;
@@ -360,10 +424,19 @@ ART BOARDS
     font-size: 28px;
     margin-left: 50px;
     }
-                
+             
+/* When screens are at least 992 px or laptop... enable hover */
+@media (min-width: 992px) { 
 .btn_open:hover {
     color: #dadadd;
     text-decoration: none;
     transition: all 0.4s;    
 }
- 
+}
+
+/* When screens are without a mouse... enable active */
+.btn_open:active {
+    color: #dadadd;
+    text-decoration: none;
+    transition: all 0.4s;    
+}
