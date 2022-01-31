@@ -7,7 +7,8 @@ html {
 /*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  
 TEXT
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
-
+/* Laptops and bigger */
+@media (min-width: 576px) { 
 h1,
 h2 {
     font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -39,6 +40,43 @@ li {
 a {
     color: rgb(160, 160, 219);
 }
+}
+
+/* Phones in vertical mode */
+@media (max-width: 575.98px) { 
+h1,
+h2 {
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    color: #1d1d1d;
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+h3,
+h4 {
+    font-weight: 600;
+    color: #3E4043;
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+b {
+    font-weight: 600;
+}
+
+p,
+li {
+    color: #3E4043;
+    font-weight: 300;
+    font-size: 0.25rem;
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+a {
+    color: rgb(160, 160, 219);
+}
+}
+
 
 /* when screens are a laptop... enable hover */
 @media (min-width: 992px) { 
