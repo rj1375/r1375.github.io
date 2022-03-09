@@ -11,7 +11,8 @@
 @font-face {
     src: url(Fonts/Sporting-Grotesque/webfonts/Bold/Sporting_Grotesque-Bold_web.woff);
     font-family: sport bold;
-}@font-face {
+}
+@font-face {
     src: url(Fonts/Sporting-Grotesque/webfonts/Regular/Sporting_Grotesque-Regular_web.woff);
     font-family: sport reg;
 }
@@ -19,16 +20,20 @@
 @font-face {
     src: url(Fonts/syne/fonts/webfonts/Syne-Bold.woff);
     font-family: syne bold;
-}@font-face {
+}
+@font-face {
     src: url(Fonts/syne/fonts/webfonts/Syne-ExtraBold.woff);
     font-family: syne ex bold;
-}@font-face {
+}
+@font-face {
     src: url(Fonts/syne/fonts/webfonts/Syne-Italic.woff);
     font-family: syne italic;
-}@font-face {
+}
+@font-face {
     src: url(Fonts/syne/fonts/webfonts/Syne-Regular.woff);
     font-family: syne reg;
-}@font-face {
+}
+@font-face {
     src: url(Fonts/syne/fonts/webfonts/SyneMono-Regular.woff);
     font-family: syne mono reg;
 }
@@ -36,16 +41,20 @@
 @font-face {
     src: url(Fonts/VictorMonoAll/WOFF/VictorMono-Bold.woff);
     font-family: vic bold;
-}@font-face {
+}
+@font-face {
     src: url(Fonts/VictorMonoAll/WOFF/VictorMono-BoldItalic.woff);
     font-family: vic bold italic;
-}@font-face {
+}
+@font-face {
     src: url(Fonts/VictorMonoAll/WOFF/VictorMono-BoldOblique.woff);
     font-family: vic bold oblic;
-}@font-face {
+}
+@font-face {
     src: url(Fonts/VictorMonoAll/WOFF/VictorMono-ExtraLight.woff);
     font-family: vic ex light;
-}@font-face {
+}
+@font-face {
     src: url(Fonts/VictorMonoAll/WOFF/VictorMono-ExtraLightItalic.woff);
     font-family: vic ex light italic;
 }@font-face {
@@ -178,6 +187,7 @@ a {
     font-family: syne reg;
     font-size: 1rem;
 }
+}
 
 /* Phones in vertical mode */
 @media (max-width: 575.98px) { 
@@ -220,8 +230,10 @@ a {
 a:hover {
     color: #dadadd;
     text-decoration: none;
-    transition: all 0.4s;}
+    transition: all 0.4s;
 }
+
+
 
 /* when screens dont have a mouse... enable active */
 a:active {
@@ -243,7 +255,7 @@ a:active {
     opacity: 0.6;
     padding-top: 1rem;
 }
-
+}
 
 /*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  
 NAVBAR
