@@ -191,37 +191,76 @@ a {
 
 /* Phones in vertical mode */
 @media (max-width: 575.98px) { 
-h1,
-h2 {
-    font-family: syne reg;
-    font-weight: 600;
-    color: #1d1d1d;
-    font-size: 2rem;
-    padding-bottom: 0.5rem;
-}
-
-h3,
-h4 {
-    font-weight: lighter;
-    color: black;
-    font-family: syne reg;
-}
-
-b {
-    font-weight: 600;
-}
-
-p,
-li {
-    color: #3E4043;
-    font-weight: 300;
-    font-size: 1.5rem;
-    font-family: syne reg;
-}
-
-a {
-    color: rgb(139, 139, 139);
-}
+    h1 {
+        font-family: deology;
+        font-weight: 600;
+        color: #1d1d1d;
+        font-size: 1.3rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    h2 {
+        font-family: syne italic;
+        font-weight: 600;
+        color: #1d1d1d;
+        font-size: 1.3rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    h3 {
+        font-size: 2rem;
+        font-weight: 200;
+        color: #3E4043;
+        font-size: 1.3rem;
+        font-family: syne reg;
+    }
+    
+    h4 {
+        font-size: 1rem;
+        font-weight: 200;
+        color: rgb(154, 154, 154);
+        font-family: syne reg;
+        text-decoration: none;
+        display: -webkit-flex;
+    }
+    
+    h4:hover {
+        color: rgb(214, 79, 226);
+    
+    }
+    
+    b {
+        font-weight: 600;
+    }
+    
+    p,
+    li {
+        color: #3E4043;
+        font-weight: 300;
+        font-size: 0.8rem;
+        font-family: syne reg;
+    }
+    
+    a {
+        color: rgb(209, 170, 226);
+        font-family: syne reg;
+        text-decoration: underline;
+        text-decoration-color: rgb(222, 222, 222);
+    }
+    
+    .title {
+        position: fixed;
+        display: block;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        padding: 1.5rem 2rem 1.5rem 2rem;
+        margin: 1rem 1rem 1rem 2rem;
+        background-color: white;
+        border-radius: 4rem;
+        font-family: syne reg;
+        font-size: 0.8rem;
+    }
 }
 
 
