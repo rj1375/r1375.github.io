@@ -77,6 +77,11 @@ main {
     margin-bottom: 150px;
 }
 
+.container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 
 /* Progress bar 
 .progressbar {
@@ -141,7 +146,7 @@ a:hover {
     top: 0;
     left: 0;
     z-index: 20002;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 20px 20px 20px 20px;
     color: black;
     font-weight: 600;
     font-size: 1rem;
@@ -213,11 +218,6 @@ a:hover {
     font-size: 24px;
 }
 
-/* .secondary a:hover{
-    color: black;
-    font-size: 20px;
-    } */
-
 .btn_open {
     font-size: 20px;
     cursor: pointer;
@@ -235,6 +235,12 @@ a:hover {
 .btn_open:hover {
     color: #ffe132
 }
+
+.btn_open:focus {
+    color: transparent;
+    outline: none;
+}
+
 
 /* GRID OPTIONS ==================================================================================================================*/
 
@@ -267,7 +273,7 @@ a:hover {
 }
 
 
-/* GRID _--__-__---__--__-__---__--__-__---__--__-__---__--__-__---__--__-__---__--__-__---_*/
+
 .gridoptions {
     text-align: left;
     top: 50px;
@@ -313,18 +319,48 @@ a:hover {
 
 .flex-grid {
     display: flex;
+    justify-content: center;
 }
 
-.col {
+.flex-grid .col {
     flex: 1;
 }
 
+.flex-grid-thirds {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-grid-thirds .col {
+    width: 32%;
+}
+
 @media (max-width: 400px) {
-    .flex-grid {
+
+    .flex-grid,
+    .flex-grid-thirds,
+    .col {
         display: block;
+        width: 100%;
+        margin: 0 0 10px 0;
     }
 }
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+}
+
+.flex-grid {
+    margin: 0 0 20px 0;
+}
+
+.col {
+    padding: 20px;
+}
 
 /* Footer ==================================================================================================================*/
 
