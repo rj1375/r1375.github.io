@@ -677,6 +677,33 @@ ART BOARDS
 
 
 
+/* Site Header ============================================================================================================ */
+
+.title {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20002;
+    padding: 20px 20px 20px 20px;
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: inherit;
+    transition: color 0.25s;
+    background-color: white;
+    border-radius: 25px;
+    font-family: Futura;
+}
+
+.logo a:hover {
+    color: #ffe132;
+}
+
+.logo .subsection {
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+}
 
 /* PORTFOLIO MENU PAGES ================================================================================================================== */
 

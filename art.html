@@ -18,21 +18,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <!-- STYLESHEET -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="resume.css">
     <link rel="stylesheet" href="site.js">
   </head>
 
 
   <body id="page-top">
-
+    <div class="title">
+      <div class="logo">
+        <a href="index.html">rachel's digital artwork</a>
+      </div>
+    </div>
     <!-- MENU *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-*  -->
-    <ul class="nav justify-content-center">
-      <li class="nav-item"><a class="nav-link" href="index.html">DIGITAL WORKs</a></li>
-      <li class="nav-item"><a class="nav-link" href="https://racheljosepho.com">ABOUT ME</a></li>
-      <li class="nav-item"><a class="nav-link" href="resume.html">RESUME</a></li>
-      <li class="nav-item"><a class="nav-link" href="social.html">GIVE me A LIKE</a></li>
-      <li class="nav-item"><a class="nav-link" href="hobbies.html">HOBBIES</a></li>
-    </ul>
+    <div id="menu" class="menu">
+      <a href="javascript:void(0)" class="btn_close" onclick="closeMenu()">×</a>
+      <div id="primary" class="primary">
+        <a href="index.html">DIGITAL WORKs</a>
+        <a href="https://racheljosepho.com">ABOUT ME</a>
+        <a href="resume.html">RESUME</a>
+        <a href="social.html">GIVE me A LIKE</a>
+        <!-- <a href="contact.html">HOBBIES</a> -->
+      </div>
+    </div>
+
+    <div id="main">
+      <button class="btn_open" onclick="openMenu()">☰</button>
+    </div>
+
+    <script>
+      // PORTFOLIO PAGES JAVASCRIPT
+      function openMenu() {
+        document.getElementById("menu").style.width = "250px";
+        document.getElementById("main").style.marginRight = "250px";
+      }
+      function closeMenu() {
+        document.getElementById("menu").style.width = "0";
+        document.getElementById("main").style.marginRight = "0";
+      }
+
+    </script>
+
 
     <!-- Media *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-* *-.-*  -->
 
