@@ -212,17 +212,19 @@ a:hover {
 }
 
 .btn_open {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: transparent;
+    position: fixed;
+    top: 50;
+    left: 20;
+    z-index: 20002;
+    padding: 10px 10px 10px 10px;
     color: black;
-    border: none;
-    position: absolute;
-    display: inherit;
-    top: 20;
-    right: 25px;
-    font-size: 28px;
-    margin-left: 50px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: inherit;
+    transition: color 0.25s;
+    background-color: white;
+    border-radius: 25px;
+    font-family: Futura;
 }
 
 .btn_open:hover {
