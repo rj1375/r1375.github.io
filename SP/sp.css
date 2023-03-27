@@ -1,0 +1,31 @@
+/* CSS: styles.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background-color: #f4f4f4;
+    transition: background-color 1s ease;
+}
+
+header {
+    backdrop-filter: blur(9px);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+header h1 {
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+
+.content-section {
+    backdrop-filter: blur(9px);
+    color: white;
+    border-color: whitesmoke;
+    margin: 50px 50px 50px 50px;
+    padding: 50px 50px 50px 50px;
+    border-style: solid;
+}
