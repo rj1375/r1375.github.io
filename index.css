@@ -82,6 +82,12 @@ main {
     padding: 8rem 1.5rem;
 }
 
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
 .row {
     margin-bottom: 150px;
 }
@@ -92,11 +98,7 @@ main {
     margin-left: 150px;
 }
 
-img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-}
+
 
 
 /* Progress bar 
