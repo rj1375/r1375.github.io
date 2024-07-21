@@ -37,10 +37,10 @@ a {
     text-decoration: none
 }
 
-ul {
-    /* list-style: none */
+/* ul {
+    list-style: none
     margin-left: 35px;
-}
+} */
 
 html {
     box-sizing: border-box
@@ -96,7 +96,7 @@ img {
 .container {
     margin-top: 100px;
     margin-bottom: 100px;
-    margin-left: 150px;
+    margin-left: 100px;
 }
 
 
