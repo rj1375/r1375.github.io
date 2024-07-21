@@ -102,7 +102,7 @@ main {
 
 
 /* ==== Typography ================================================================================================================== */
-
+/*
 h1 {
     font-weight: 500;
     font-family: Roboto;
@@ -135,12 +135,13 @@ p {
     margin-left: 50px;
     margin-bottom: -5px;
     font-family: 'roboto', sans-serif;
-}
+} 
 
 *+p,
 *+ul {
     margin-top: 0.6em;
 }
+*/
 
 a:hover {
     color: #ffe132;
@@ -375,7 +376,7 @@ body {
 footer {
     font-family: 'roboto', sans-serif;
     overflow: hidden;
-    color: green;
+    color: #C9D6FF;
     padding: 1.5rem;
     font-weight: bolder;
     font-size: 0.8rem;
@@ -400,6 +401,7 @@ footer {
 
 .content-container {
     overflow: hidden;
+    padding-left: 2;
 }
 
 .content-image+.content-text,
